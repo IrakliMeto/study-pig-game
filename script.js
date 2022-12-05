@@ -101,7 +101,7 @@ const player0Hold = ()=> {
   player1El.classList.add('player--active');
   diceEl.classList.add('hidden');
 
-  if(player0Sum >= 10) {
+  if(player0Sum >= 100) {
     player0El.classList.remove('player--active');
     player0El.classList.add('player--winner');
     document.querySelector('#name--0').textContent = "PLAYER 1 WIN"
@@ -120,7 +120,7 @@ const player1Hold = ()=> {
   player1El.classList.remove('player--active');
   diceEl.classList.add('hidden');
 
-  if(player1Sum >= 10) {
+  if(player1Sum >= 100) {
     player1El.classList.remove('player--active');
     player1El.classList.add('player--winner');
     document.querySelector('#name--1').textContent = "PLAYER 2 WIN"
